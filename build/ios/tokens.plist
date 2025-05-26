@@ -1,0 +1,756 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Do not edit directly, this file was auto-generated.
+-->
+<plist version="1.0">
+  <dict>
+    <key>ColorDarkOnMedia</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorDarkError</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorDarkSurfaceDark</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorDarkSurfaceLight</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorDarkSurfaceMediumEnabled</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorDarkSurfaceMediumDisabled</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorDarkOnSurfaceDark</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorDarkOnSurfaceMedium</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorDarkOnSurfaceLightEnabled</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorDarkOnSurfaceLightDisabled</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorOpacityTextMedium</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorOpacityTextLight</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorOpacityOnMediaMedium</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>ColorOpacityOnMediaLight</key>
+    <dict>
+      <key>r</key>
+      <real>NaN</real>
+      <key>g</key>
+      <real>NaN</real>
+      <key>b</key>
+      <real>NaN</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+  <key>GradientGradientTopMedium</key>
+<string>[object Object]</string>
+  <key>GradientGradientTopLight</key>
+<string>[object Object]</string>
+  <key>GradientGradientBottomMedium</key>
+<string>[object Object]</string>
+  <key>GradientGradientBottomLight</key>
+<string>[object Object]</string>
+  <key>GridWebXs</key>
+<string>[object Object]</string>
+  <key>GridWebXl</key>
+<string>[object Object]</string>
+  <key>GridIosAndroidXs</key>
+<string>[object Object]</string>
+  <key>GridIosAndroidMd</key>
+<string>[object Object]</string>
+  <key>FontDisplaySmall</key>
+<string>[object Object]</string>
+  <key>FontTitleExtraLargeProminent</key>
+<string>[object Object]</string>
+  <key>FontTitleExtraLarge</key>
+<string>[object Object]</string>
+  <key>FontTitleLarge</key>
+<string>[object Object]</string>
+  <key>FontTitleLargeLight</key>
+<string>[object Object]</string>
+  <key>FontTitleMedium</key>
+<string>[object Object]</string>
+  <key>FontTitleMediumLight</key>
+<string>[object Object]</string>
+  <key>FontTitleSmall</key>
+<string>[object Object]</string>
+  <key>FontTitleSmallLight</key>
+<string>[object Object]</string>
+  <key>FontBodyExtraLarge</key>
+<string>[object Object]</string>
+  <key>FontBodyExtraLargeLight</key>
+<string>[object Object]</string>
+  <key>FontBodyLarge</key>
+<string>[object Object]</string>
+  <key>FontBodyLargeLight</key>
+<string>[object Object]</string>
+  <key>FontBodyMedium</key>
+<string>[object Object]</string>
+  <key>FontBodySmall</key>
+<string>[object Object]</string>
+  <key>FontLabelExtraLarge</key>
+<string>[object Object]</string>
+  <key>FontLabelLarge</key>
+<string>[object Object]</string>
+  <key>FontLabelLargeProminent</key>
+<string>[object Object]</string>
+  <key>FontLabelMedium</key>
+<string>[object Object]</string>
+  <key>FontLabelSmall</key>
+<string>[object Object]</string>
+  <key>FontLabelSmallProminent</key>
+<string>[object Object]</string>
+  <key>FontLabelExtraSmall</key>
+<string>[object Object]</string>
+  <key>FontLabelExtraSmallProminent</key>
+<string>[object Object]</string>
+  <key>FontLabelExtraSmallVariant</key>
+<string>[object Object]</string>
+  <key>TypographyDisplaySmallFontSize</key>
+<integer>576.00f</integer>
+  <key>TypographyDisplaySmallTextDecoration</key>
+<string>none</string>
+  <key>TypographyDisplaySmallFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyDisplaySmallFontWeight</key>
+<string>700</string>
+  <key>TypographyDisplaySmallFontStyle</key>
+<string>normal</string>
+  <key>TypographyDisplaySmallFontStretch</key>
+<string>normal</string>
+  <key>TypographyDisplaySmallLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyDisplaySmallLineHeight</key>
+<integer>704.00f</integer>
+  <key>TypographyDisplaySmallParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyDisplaySmallParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyDisplaySmallTextCase</key>
+<string>none</string>
+  <key>TypographyTitleExtraLargeProminentFontSize</key>
+<integer>416.00f</integer>
+  <key>TypographyTitleExtraLargeProminentTextDecoration</key>
+<string>none</string>
+  <key>TypographyTitleExtraLargeProminentFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyTitleExtraLargeProminentFontWeight</key>
+<string>700</string>
+  <key>TypographyTitleExtraLargeProminentFontStyle</key>
+<string>normal</string>
+  <key>TypographyTitleExtraLargeProminentFontStretch</key>
+<string>normal</string>
+  <key>TypographyTitleExtraLargeProminentLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleExtraLargeProminentLineHeight</key>
+<integer>480.00f</integer>
+  <key>TypographyTitleExtraLargeProminentParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleExtraLargeProminentParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleExtraLargeProminentTextCase</key>
+<string>none</string>
+  <key>TypographyTitleExtraLargeFontSize</key>
+<integer>416.00f</integer>
+  <key>TypographyTitleExtraLargeTextDecoration</key>
+<string>none</string>
+  <key>TypographyTitleExtraLargeFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyTitleExtraLargeFontWeight</key>
+<string>400</string>
+  <key>TypographyTitleExtraLargeFontStyle</key>
+<string>normal</string>
+  <key>TypographyTitleExtraLargeFontStretch</key>
+<string>normal</string>
+  <key>TypographyTitleExtraLargeLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleExtraLargeLineHeight</key>
+<integer>480.00f</integer>
+  <key>TypographyTitleExtraLargeParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleExtraLargeParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleExtraLargeTextCase</key>
+<string>none</string>
+  <key>TypographyTitleLargeFontSize</key>
+<integer>352.00f</integer>
+  <key>TypographyTitleLargeTextDecoration</key>
+<string>none</string>
+  <key>TypographyTitleLargeFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyTitleLargeFontWeight</key>
+<string>400</string>
+  <key>TypographyTitleLargeFontStyle</key>
+<string>normal</string>
+  <key>TypographyTitleLargeFontStretch</key>
+<string>normal</string>
+  <key>TypographyTitleLargeLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleLargeLineHeight</key>
+<integer>448.00f</integer>
+  <key>TypographyTitleLargeParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleLargeParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleLargeTextCase</key>
+<string>none</string>
+  <key>TypographyTitleLargeLightFontSize</key>
+<integer>352.00f</integer>
+  <key>TypographyTitleLargeLightTextDecoration</key>
+<string>none</string>
+  <key>TypographyTitleLargeLightFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyTitleLargeLightFontWeight</key>
+<string>300</string>
+  <key>TypographyTitleLargeLightFontStyle</key>
+<string>normal</string>
+  <key>TypographyTitleLargeLightFontStretch</key>
+<string>normal</string>
+  <key>TypographyTitleLargeLightLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleLargeLightLineHeight</key>
+<integer>448.00f</integer>
+  <key>TypographyTitleLargeLightParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleLargeLightParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleLargeLightTextCase</key>
+<string>none</string>
+  <key>TypographyTitleMediumFontSize</key>
+<integer>256.00f</integer>
+  <key>TypographyTitleMediumTextDecoration</key>
+<string>none</string>
+  <key>TypographyTitleMediumFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyTitleMediumFontWeight</key>
+<string>400</string>
+  <key>TypographyTitleMediumFontStyle</key>
+<string>normal</string>
+  <key>TypographyTitleMediumFontStretch</key>
+<string>normal</string>
+  <key>TypographyTitleMediumLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleMediumLineHeight</key>
+<integer>384.00f</integer>
+  <key>TypographyTitleMediumParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleMediumParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleMediumTextCase</key>
+<string>none</string>
+  <key>TypographyTitleMediumLightFontSize</key>
+<integer>256.00f</integer>
+  <key>TypographyTitleMediumLightTextDecoration</key>
+<string>none</string>
+  <key>TypographyTitleMediumLightFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyTitleMediumLightFontWeight</key>
+<string>300</string>
+  <key>TypographyTitleMediumLightFontStyle</key>
+<string>normal</string>
+  <key>TypographyTitleMediumLightFontStretch</key>
+<string>normal</string>
+  <key>TypographyTitleMediumLightLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleMediumLightLineHeight</key>
+<integer>384.00f</integer>
+  <key>TypographyTitleMediumLightParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleMediumLightParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleMediumLightTextCase</key>
+<string>none</string>
+  <key>TypographyTitleSmallFontSize</key>
+<integer>224.00f</integer>
+  <key>TypographyTitleSmallTextDecoration</key>
+<string>none</string>
+  <key>TypographyTitleSmallFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyTitleSmallFontWeight</key>
+<string>400</string>
+  <key>TypographyTitleSmallFontStyle</key>
+<string>normal</string>
+  <key>TypographyTitleSmallFontStretch</key>
+<string>normal</string>
+  <key>TypographyTitleSmallLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleSmallLineHeight</key>
+<integer>320.00f</integer>
+  <key>TypographyTitleSmallParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleSmallParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleSmallTextCase</key>
+<string>none</string>
+  <key>TypographyTitleSmallLightFontSize</key>
+<integer>224.00f</integer>
+  <key>TypographyTitleSmallLightTextDecoration</key>
+<string>none</string>
+  <key>TypographyTitleSmallLightFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyTitleSmallLightFontWeight</key>
+<string>300</string>
+  <key>TypographyTitleSmallLightFontStyle</key>
+<string>normal</string>
+  <key>TypographyTitleSmallLightFontStretch</key>
+<string>normal</string>
+  <key>TypographyTitleSmallLightLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleSmallLightLineHeight</key>
+<integer>320.00f</integer>
+  <key>TypographyTitleSmallLightParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleSmallLightParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyTitleSmallLightTextCase</key>
+<string>none</string>
+  <key>TypographyBodyExtraLargeFontSize</key>
+<integer>288.00f</integer>
+  <key>TypographyBodyExtraLargeTextDecoration</key>
+<string>none</string>
+  <key>TypographyBodyExtraLargeFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyBodyExtraLargeFontWeight</key>
+<string>400</string>
+  <key>TypographyBodyExtraLargeFontStyle</key>
+<string>normal</string>
+  <key>TypographyBodyExtraLargeFontStretch</key>
+<string>normal</string>
+  <key>TypographyBodyExtraLargeLetterSpacing</key>
+<integer>1.44f</integer>
+  <key>TypographyBodyExtraLargeLineHeight</key>
+<integer>416.00f</integer>
+  <key>TypographyBodyExtraLargeParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyBodyExtraLargeParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyBodyExtraLargeTextCase</key>
+<string>none</string>
+  <key>TypographyBodyExtraLargeLightFontSize</key>
+<integer>288.00f</integer>
+  <key>TypographyBodyExtraLargeLightTextDecoration</key>
+<string>none</string>
+  <key>TypographyBodyExtraLargeLightFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyBodyExtraLargeLightFontWeight</key>
+<string>300</string>
+  <key>TypographyBodyExtraLargeLightFontStyle</key>
+<string>normal</string>
+  <key>TypographyBodyExtraLargeLightFontStretch</key>
+<string>normal</string>
+  <key>TypographyBodyExtraLargeLightLetterSpacing</key>
+<integer>1.44f</integer>
+  <key>TypographyBodyExtraLargeLightLineHeight</key>
+<integer>416.00f</integer>
+  <key>TypographyBodyExtraLargeLightParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyBodyExtraLargeLightParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyBodyExtraLargeLightTextCase</key>
+<string>none</string>
+  <key>TypographyBodyLargeFontSize</key>
+<integer>256.00f</integer>
+  <key>TypographyBodyLargeTextDecoration</key>
+<string>none</string>
+  <key>TypographyBodyLargeFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyBodyLargeFontWeight</key>
+<string>400</string>
+  <key>TypographyBodyLargeFontStyle</key>
+<string>normal</string>
+  <key>TypographyBodyLargeFontStretch</key>
+<string>normal</string>
+  <key>TypographyBodyLargeLetterSpacing</key>
+<integer>1.28f</integer>
+  <key>TypographyBodyLargeLineHeight</key>
+<integer>384.00f</integer>
+  <key>TypographyBodyLargeParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyBodyLargeParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyBodyLargeTextCase</key>
+<string>none</string>
+  <key>TypographyBodyLargeLightFontSize</key>
+<integer>256.00f</integer>
+  <key>TypographyBodyLargeLightTextDecoration</key>
+<string>none</string>
+  <key>TypographyBodyLargeLightFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyBodyLargeLightFontWeight</key>
+<string>300</string>
+  <key>TypographyBodyLargeLightFontStyle</key>
+<string>normal</string>
+  <key>TypographyBodyLargeLightFontStretch</key>
+<string>normal</string>
+  <key>TypographyBodyLargeLightLetterSpacing</key>
+<integer>1.28f</integer>
+  <key>TypographyBodyLargeLightLineHeight</key>
+<integer>384.00f</integer>
+  <key>TypographyBodyLargeLightParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyBodyLargeLightParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyBodyLargeLightTextCase</key>
+<string>none</string>
+  <key>TypographyBodyMediumFontSize</key>
+<integer>224.00f</integer>
+  <key>TypographyBodyMediumTextDecoration</key>
+<string>none</string>
+  <key>TypographyBodyMediumFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyBodyMediumFontWeight</key>
+<string>400</string>
+  <key>TypographyBodyMediumFontStyle</key>
+<string>normal</string>
+  <key>TypographyBodyMediumFontStretch</key>
+<string>normal</string>
+  <key>TypographyBodyMediumLetterSpacing</key>
+<integer>0.56f</integer>
+  <key>TypographyBodyMediumLineHeight</key>
+<integer>320.00f</integer>
+  <key>TypographyBodyMediumParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyBodyMediumParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyBodyMediumTextCase</key>
+<string>none</string>
+  <key>TypographyBodySmallFontSize</key>
+<integer>192.00f</integer>
+  <key>TypographyBodySmallTextDecoration</key>
+<string>none</string>
+  <key>TypographyBodySmallFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyBodySmallFontWeight</key>
+<string>400</string>
+  <key>TypographyBodySmallFontStyle</key>
+<string>normal</string>
+  <key>TypographyBodySmallFontStretch</key>
+<string>normal</string>
+  <key>TypographyBodySmallLetterSpacing</key>
+<integer>0.77f</integer>
+  <key>TypographyBodySmallLineHeight</key>
+<integer>256.00f</integer>
+  <key>TypographyBodySmallParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyBodySmallParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyBodySmallTextCase</key>
+<string>none</string>
+  <key>TypographyLabelExtraLargeFontSize</key>
+<integer>320.00f</integer>
+  <key>TypographyLabelExtraLargeTextDecoration</key>
+<string>none</string>
+  <key>TypographyLabelExtraLargeFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyLabelExtraLargeFontWeight</key>
+<string>300</string>
+  <key>TypographyLabelExtraLargeFontStyle</key>
+<string>normal</string>
+  <key>TypographyLabelExtraLargeFontStretch</key>
+<string>normal</string>
+  <key>TypographyLabelExtraLargeLetterSpacing</key>
+<integer>0.32f</integer>
+  <key>TypographyLabelExtraLargeLineHeight</key>
+<integer>384.00f</integer>
+  <key>TypographyLabelExtraLargeParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelExtraLargeParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelExtraLargeTextCase</key>
+<string>none</string>
+  <key>TypographyLabelLargeFontSize</key>
+<integer>256.00f</integer>
+  <key>TypographyLabelLargeTextDecoration</key>
+<string>none</string>
+  <key>TypographyLabelLargeFontFamily</key>
+<string>Inter</string>
+  <key>TypographyLabelLargeFontWeight</key>
+<string>300</string>
+  <key>TypographyLabelLargeFontStyle</key>
+<string>normal</string>
+  <key>TypographyLabelLargeFontStretch</key>
+<string>normal</string>
+  <key>TypographyLabelLargeLetterSpacing</key>
+<integer>0.26f</integer>
+  <key>TypographyLabelLargeLineHeight</key>
+<integer>320.00f</integer>
+  <key>TypographyLabelLargeParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelLargeParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelLargeTextCase</key>
+<string>none</string>
+  <key>TypographyLabelLargeProminentFontSize</key>
+<integer>256.00f</integer>
+  <key>TypographyLabelLargeProminentTextDecoration</key>
+<string>none</string>
+  <key>TypographyLabelLargeProminentFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyLabelLargeProminentFontWeight</key>
+<string>400</string>
+  <key>TypographyLabelLargeProminentFontStyle</key>
+<string>normal</string>
+  <key>TypographyLabelLargeProminentFontStretch</key>
+<string>normal</string>
+  <key>TypographyLabelLargeProminentLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelLargeProminentLineHeight</key>
+<integer>320.00f</integer>
+  <key>TypographyLabelLargeProminentParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelLargeProminentParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelLargeProminentTextCase</key>
+<string>none</string>
+  <key>TypographyLabelMediumFontSize</key>
+<integer>224.00f</integer>
+  <key>TypographyLabelMediumTextDecoration</key>
+<string>none</string>
+  <key>TypographyLabelMediumFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyLabelMediumFontWeight</key>
+<string>400</string>
+  <key>TypographyLabelMediumFontStyle</key>
+<string>normal</string>
+  <key>TypographyLabelMediumFontStretch</key>
+<string>normal</string>
+  <key>TypographyLabelMediumLetterSpacing</key>
+<integer>1.12f</integer>
+  <key>TypographyLabelMediumLineHeight</key>
+<integer>256.00f</integer>
+  <key>TypographyLabelMediumParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelMediumParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelMediumTextCase</key>
+<string>none</string>
+  <key>TypographyLabelSmallFontSize</key>
+<integer>192.00f</integer>
+  <key>TypographyLabelSmallTextDecoration</key>
+<string>none</string>
+  <key>TypographyLabelSmallFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyLabelSmallFontWeight</key>
+<string>400</string>
+  <key>TypographyLabelSmallFontStyle</key>
+<string>normal</string>
+  <key>TypographyLabelSmallFontStretch</key>
+<string>normal</string>
+  <key>TypographyLabelSmallLetterSpacing</key>
+<integer>0.96f</integer>
+  <key>TypographyLabelSmallLineHeight</key>
+<integer>256.00f</integer>
+  <key>TypographyLabelSmallParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelSmallParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelSmallTextCase</key>
+<string>none</string>
+  <key>TypographyLabelSmallProminentFontSize</key>
+<integer>192.00f</integer>
+  <key>TypographyLabelSmallProminentTextDecoration</key>
+<string>none</string>
+  <key>TypographyLabelSmallProminentFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyLabelSmallProminentFontWeight</key>
+<string>700</string>
+  <key>TypographyLabelSmallProminentFontStyle</key>
+<string>normal</string>
+  <key>TypographyLabelSmallProminentFontStretch</key>
+<string>normal</string>
+  <key>TypographyLabelSmallProminentLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelSmallProminentLineHeight</key>
+<integer>256.00f</integer>
+  <key>TypographyLabelSmallProminentParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelSmallProminentParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelSmallProminentTextCase</key>
+<string>none</string>
+  <key>TypographyLabelExtraSmallFontSize</key>
+<integer>128.00f</integer>
+  <key>TypographyLabelExtraSmallTextDecoration</key>
+<string>none</string>
+  <key>TypographyLabelExtraSmallFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyLabelExtraSmallFontWeight</key>
+<string>400</string>
+  <key>TypographyLabelExtraSmallFontStyle</key>
+<string>normal</string>
+  <key>TypographyLabelExtraSmallFontStretch</key>
+<string>normal</string>
+  <key>TypographyLabelExtraSmallLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelExtraSmallLineHeight</key>
+<integer>128.00f</integer>
+  <key>TypographyLabelExtraSmallParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelExtraSmallParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelExtraSmallTextCase</key>
+<string>none</string>
+  <key>TypographyLabelExtraSmallProminentFontSize</key>
+<integer>128.00f</integer>
+  <key>TypographyLabelExtraSmallProminentTextDecoration</key>
+<string>none</string>
+  <key>TypographyLabelExtraSmallProminentFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyLabelExtraSmallProminentFontWeight</key>
+<string>700</string>
+  <key>TypographyLabelExtraSmallProminentFontStyle</key>
+<string>normal</string>
+  <key>TypographyLabelExtraSmallProminentFontStretch</key>
+<string>normal</string>
+  <key>TypographyLabelExtraSmallProminentLetterSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelExtraSmallProminentLineHeight</key>
+<integer>128.00f</integer>
+  <key>TypographyLabelExtraSmallProminentParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelExtraSmallProminentParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelExtraSmallProminentTextCase</key>
+<string>none</string>
+  <key>TypographyLabelExtraSmallVariantFontSize</key>
+<integer>128.00f</integer>
+  <key>TypographyLabelExtraSmallVariantTextDecoration</key>
+<string>none</string>
+  <key>TypographyLabelExtraSmallVariantFontFamily</key>
+<string>Helvetica</string>
+  <key>TypographyLabelExtraSmallVariantFontWeight</key>
+<string>700</string>
+  <key>TypographyLabelExtraSmallVariantFontStyle</key>
+<string>normal</string>
+  <key>TypographyLabelExtraSmallVariantFontStretch</key>
+<string>normal</string>
+  <key>TypographyLabelExtraSmallVariantLetterSpacing</key>
+<integer>70.40f</integer>
+  <key>TypographyLabelExtraSmallVariantLineHeight</key>
+<integer>128.00f</integer>
+  <key>TypographyLabelExtraSmallVariantParagraphIndent</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelExtraSmallVariantParagraphSpacing</key>
+<integer>0.00f</integer>
+  <key>TypographyLabelExtraSmallVariantTextCase</key>
+<string>uppercase</string>
+  </dict>
+</plist>

@@ -1,0 +1,132 @@
+
+//
+// StyleDictionarySize.swift
+//
+
+// Do not edit directly, this file was auto-generated.
+
+
+import SwiftUI
+
+public class {
+    public static let TypographyBodyExtraLargeFontSize = 288.00f
+    public static let TypographyBodyExtraLargeLetterSpacing = 1.44f
+    public static let TypographyBodyExtraLargeLightFontSize = 288.00f
+    public static let TypographyBodyExtraLargeLightLetterSpacing = 1.44f
+    public static let TypographyBodyExtraLargeLightLineHeight = 416.00f
+    public static let TypographyBodyExtraLargeLightParagraphIndent = 0.00f
+    public static let TypographyBodyExtraLargeLightParagraphSpacing = 0.00f
+    public static let TypographyBodyExtraLargeLineHeight = 416.00f
+    public static let TypographyBodyExtraLargeParagraphIndent = 0.00f
+    public static let TypographyBodyExtraLargeParagraphSpacing = 0.00f
+    public static let TypographyBodyLargeFontSize = 256.00f
+    public static let TypographyBodyLargeLetterSpacing = 1.28f
+    public static let TypographyBodyLargeLightFontSize = 256.00f
+    public static let TypographyBodyLargeLightLetterSpacing = 1.28f
+    public static let TypographyBodyLargeLightLineHeight = 384.00f
+    public static let TypographyBodyLargeLightParagraphIndent = 0.00f
+    public static let TypographyBodyLargeLightParagraphSpacing = 0.00f
+    public static let TypographyBodyLargeLineHeight = 384.00f
+    public static let TypographyBodyLargeParagraphIndent = 0.00f
+    public static let TypographyBodyLargeParagraphSpacing = 0.00f
+    public static let TypographyBodyMediumFontSize = 224.00f
+    public static let TypographyBodyMediumLetterSpacing = 0.56f
+    public static let TypographyBodyMediumLineHeight = 320.00f
+    public static let TypographyBodyMediumParagraphIndent = 0.00f
+    public static let TypographyBodyMediumParagraphSpacing = 0.00f
+    public static let TypographyBodySmallFontSize = 192.00f
+    public static let TypographyBodySmallLetterSpacing = 0.77f
+    public static let TypographyBodySmallLineHeight = 256.00f
+    public static let TypographyBodySmallParagraphIndent = 0.00f
+    public static let TypographyBodySmallParagraphSpacing = 0.00f
+    public static let TypographyDisplaySmallFontSize = 576.00f
+    public static let TypographyDisplaySmallLetterSpacing = 0.00f
+    public static let TypographyDisplaySmallLineHeight = 704.00f
+    public static let TypographyDisplaySmallParagraphIndent = 0.00f
+    public static let TypographyDisplaySmallParagraphSpacing = 0.00f
+    public static let TypographyLabelExtraLargeFontSize = 320.00f
+    public static let TypographyLabelExtraLargeLetterSpacing = 0.32f
+    public static let TypographyLabelExtraLargeLineHeight = 384.00f
+    public static let TypographyLabelExtraLargeParagraphIndent = 0.00f
+    public static let TypographyLabelExtraLargeParagraphSpacing = 0.00f
+    public static let TypographyLabelExtraSmallFontSize = 128.00f
+    public static let TypographyLabelExtraSmallLetterSpacing = 0.00f
+    public static let TypographyLabelExtraSmallLineHeight = 128.00f
+    public static let TypographyLabelExtraSmallParagraphIndent = 0.00f
+    public static let TypographyLabelExtraSmallParagraphSpacing = 0.00f
+    public static let TypographyLabelExtraSmallProminentFontSize = 128.00f
+    public static let TypographyLabelExtraSmallProminentLetterSpacing = 0.00f
+    public static let TypographyLabelExtraSmallProminentLineHeight = 128.00f
+    public static let TypographyLabelExtraSmallProminentParagraphIndent = 0.00f
+    public static let TypographyLabelExtraSmallProminentParagraphSpacing = 0.00f
+    public static let TypographyLabelExtraSmallVariantFontSize = 128.00f
+    public static let TypographyLabelExtraSmallVariantLetterSpacing = 70.40f
+    public static let TypographyLabelExtraSmallVariantLineHeight = 128.00f
+    public static let TypographyLabelExtraSmallVariantParagraphIndent = 0.00f
+    public static let TypographyLabelExtraSmallVariantParagraphSpacing = 0.00f
+    public static let TypographyLabelLargeFontSize = 256.00f
+    public static let TypographyLabelLargeLetterSpacing = 0.26f
+    public static let TypographyLabelLargeLineHeight = 320.00f
+    public static let TypographyLabelLargeParagraphIndent = 0.00f
+    public static let TypographyLabelLargeParagraphSpacing = 0.00f
+    public static let TypographyLabelLargeProminentFontSize = 256.00f
+    public static let TypographyLabelLargeProminentLetterSpacing = 0.00f
+    public static let TypographyLabelLargeProminentLineHeight = 320.00f
+    public static let TypographyLabelLargeProminentParagraphIndent = 0.00f
+    public static let TypographyLabelLargeProminentParagraphSpacing = 0.00f
+    public static let TypographyLabelMediumFontSize = 224.00f
+    public static let TypographyLabelMediumLetterSpacing = 1.12f
+    public static let TypographyLabelMediumLineHeight = 256.00f
+    public static let TypographyLabelMediumParagraphIndent = 0.00f
+    public static let TypographyLabelMediumParagraphSpacing = 0.00f
+    public static let TypographyLabelSmallFontSize = 192.00f
+    public static let TypographyLabelSmallLetterSpacing = 0.96f
+    public static let TypographyLabelSmallLineHeight = 256.00f
+    public static let TypographyLabelSmallParagraphIndent = 0.00f
+    public static let TypographyLabelSmallParagraphSpacing = 0.00f
+    public static let TypographyLabelSmallProminentFontSize = 192.00f
+    public static let TypographyLabelSmallProminentLetterSpacing = 0.00f
+    public static let TypographyLabelSmallProminentLineHeight = 256.00f
+    public static let TypographyLabelSmallProminentParagraphIndent = 0.00f
+    public static let TypographyLabelSmallProminentParagraphSpacing = 0.00f
+    public static let TypographyTitleExtraLargeFontSize = 416.00f
+    public static let TypographyTitleExtraLargeLetterSpacing = 0.00f
+    public static let TypographyTitleExtraLargeLineHeight = 480.00f
+    public static let TypographyTitleExtraLargeParagraphIndent = 0.00f
+    public static let TypographyTitleExtraLargeParagraphSpacing = 0.00f
+    public static let TypographyTitleExtraLargeProminentFontSize = 416.00f
+    public static let TypographyTitleExtraLargeProminentLetterSpacing = 0.00f
+    public static let TypographyTitleExtraLargeProminentLineHeight = 480.00f
+    public static let TypographyTitleExtraLargeProminentParagraphIndent = 0.00f
+    public static let TypographyTitleExtraLargeProminentParagraphSpacing = 0.00f
+    public static let TypographyTitleLargeFontSize = 352.00f
+    public static let TypographyTitleLargeLetterSpacing = 0.00f
+    public static let TypographyTitleLargeLightFontSize = 352.00f
+    public static let TypographyTitleLargeLightLetterSpacing = 0.00f
+    public static let TypographyTitleLargeLightLineHeight = 448.00f
+    public static let TypographyTitleLargeLightParagraphIndent = 0.00f
+    public static let TypographyTitleLargeLightParagraphSpacing = 0.00f
+    public static let TypographyTitleLargeLineHeight = 448.00f
+    public static let TypographyTitleLargeParagraphIndent = 0.00f
+    public static let TypographyTitleLargeParagraphSpacing = 0.00f
+    public static let TypographyTitleMediumFontSize = 256.00f
+    public static let TypographyTitleMediumLetterSpacing = 0.00f
+    public static let TypographyTitleMediumLightFontSize = 256.00f
+    public static let TypographyTitleMediumLightLetterSpacing = 0.00f
+    public static let TypographyTitleMediumLightLineHeight = 384.00f
+    public static let TypographyTitleMediumLightParagraphIndent = 0.00f
+    public static let TypographyTitleMediumLightParagraphSpacing = 0.00f
+    public static let TypographyTitleMediumLineHeight = 384.00f
+    public static let TypographyTitleMediumParagraphIndent = 0.00f
+    public static let TypographyTitleMediumParagraphSpacing = 0.00f
+    public static let TypographyTitleSmallFontSize = 224.00f
+    public static let TypographyTitleSmallLetterSpacing = 0.00f
+    public static let TypographyTitleSmallLightFontSize = 224.00f
+    public static let TypographyTitleSmallLightLetterSpacing = 0.00f
+    public static let TypographyTitleSmallLightLineHeight = 320.00f
+    public static let TypographyTitleSmallLightParagraphIndent = 0.00f
+    public static let TypographyTitleSmallLightParagraphSpacing = 0.00f
+    public static let TypographyTitleSmallLineHeight = 320.00f
+    public static let TypographyTitleSmallParagraphIndent = 0.00f
+    public static let TypographyTitleSmallParagraphSpacing = 0.00f
+}

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-  Do not edit directly
-  Generated on Mon, 26 May 2025 15:35:40 GMT
+  Do not edit directly, this file was auto-generated.
 -->
 <resources>
   <color name="color_dark_on_media">#ffffffff</color>
@@ -19,5 +18,4 @@
   <color name="color_opacity_text_light">#4dffffff</color>
   <color name="color_opacity_on_media_medium">#99181818</color>
   <color name="color_opacity_on_media_light">#33181818</color>
-  
 </resources>
