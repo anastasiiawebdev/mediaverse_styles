@@ -1,4 +1,4 @@
-# Mediaverse Styles
+# 🎨 Mediaverse Styles
 
 A comprehensive and scalable **Style Dictionary 5.0** configuration for managing and exporting design tokens across multiple platforms. Built with flexibility, platform specificity, and clean token organization in mind.
 
