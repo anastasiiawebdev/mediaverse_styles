@@ -52,5 +52,5 @@ This setup exports design tokens for a wide range of platforms, including:
   - **Nested JSON** for clarity  
   - **Flat JSON** for compatibility and export ease
 
-- Applies **platform-specific naming conventions** to prevent naming collisions and improve readability
+- Applies **platform-specific naming conventions** to prevent naming collisions and improve readability 
 
