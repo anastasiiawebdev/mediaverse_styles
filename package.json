@@ -1,12 +1,20 @@
 {
   "name": "mediaverse_styles",
   "version": "1.0.0",
+  "description": "Design tokens for Mediaverse, exported from Figma and built with Style Dictionary for CSS, iOS, Android and JSON",
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "npm run clean && style-dictionary build --config config/style-dictionary.config.js",
-    "clean": "rm -rf build"
+    "clean": "node -e \"require('fs').rmSync('build', { recursive: true, force: true })\""
   },
-  "keywords": [],
+  "keywords": [
+    "design-tokens",
+    "style-dictionary",
+    "figma"
+  ],
   "author": "Anastasiia Myronenko",
   "license": "ISC",
   "devDependencies": {

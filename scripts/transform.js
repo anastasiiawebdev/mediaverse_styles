@@ -12,6 +12,18 @@ export const isColor = (token) => token.type === 'color';
 export const isSize = (token) => token.type === 'dimension' || token.type === 'fontSize';
 export const isFontSize = (token) => token.type === 'fontSize';
 export const isNotGrid = (token) => token.type !== 'custom-grid';
+export const isLetterSpacing = (token) =>
+  token.path[0] === 'typography' && token.path.at(-1) === 'letterSpacing';
+
+// Figma exports these text properties for every style, almost always with the
+// default value. Skip them when they are default so the output stays readable.
+const TEXT_DEFAULTS = { paragraphIndent: 0, paragraphSpacing: 0, textDecoration: 'none', fontStretch: 'normal' };
+export const isUseful = (token) => {
+  const key = token.path.at(-1);
+  return !(token.path[0] === 'typography' && key in TEXT_DEFAULTS && token.original.value === TEXT_DEFAULTS[key]);
+};
+
+const TEXT_TRANSFORM = { uppercase: 'uppercase', lowercase: 'lowercase', title: 'capitalize', capitalize: 'capitalize' };
 
 const hexToRgba = (hex) => {
   const h = hex.replace('#', '');
@@ -22,21 +34,29 @@ const hexToRgba = (hex) => {
 // Web output uses px, matching Figma 1:1. Zero stays unitless.
 const px = (value) => (Number(value) === 0 ? '0' : `${value}px`);
 
-// Mark `typography.*.fontSize` and `lineHeight` tokens as `fontSize` so
-// Android/Compose emit them in `sp` (scales with the user's font-size
-// setting) instead of `dp`, so line height grows together with the text.
-const walk = (node, key, fn) => {
-  if (node && typeof node === 'object') {
-    if ('value' in node) return fn(node, key);
-    Object.entries(node).forEach(([k, child]) => walk(child, k, fn));
-  }
+// Calls fn for every text style in the `typography` group
+// (an object with fontSize, lineHeight, letterSpacing, ... tokens).
+const eachTextStyle = (node, fn) => {
+  if (!node || typeof node !== 'object' || 'value' in node) return;
+  if (node.fontSize && 'value' in node.fontSize) return fn(node);
+  Object.values(node).forEach((child) => eachTextStyle(child, fn));
 };
+
+const round = (n) => Number(n.toFixed(4));
 
 export const hooks = {
   preprocessors: {
-    'figma/font-size-type': (dictionary) => {
-      walk(dictionary.typography, null, (token, key) => {
-        if (['fontSize', 'lineHeight'].includes(key) && token.type === 'dimension') token.type = 'fontSize';
+    'figma/typography': (dictionary) => {
+      eachTextStyle(dictionary.typography, (style) => {
+        // Mark fontSize and lineHeight as `fontSize` so Android/Compose emit
+        // them in `sp`: both grow with the user's font-size setting.
+        ['fontSize', 'lineHeight'].forEach((key) => {
+          if (style[key]?.type === 'dimension') style[key].type = 'fontSize';
+        });
+        // Android letter spacing is relative to the font size (em), not dp.
+        if (style.letterSpacing) {
+          style.letterSpacing.letterSpacingEm = round(style.letterSpacing.value / style.fontSize.value);
+        }
       });
       return dictionary;
     }
@@ -48,6 +68,13 @@ export const hooks = {
       type: 'value',
       filter: isSize,
       transform: (token) => px(token.value)
+    },
+
+    // Compose letter spacing in em: 0.09px on 18px text -> 0.005.em
+    'size/compose/letterSpacingEm': {
+      type: 'value',
+      filter: isLetterSpacing,
+      transform: (token) => `${token.letterSpacingEm}.em`
     },
 
     // { gradientType, rotation, stops } -> linear-gradient(...)
@@ -75,6 +102,36 @@ export const hooks = {
   },
 
   formats: {
+    // One CSS class per Figma text style. The `font` shorthand cannot hold
+    // letter spacing, text case or decoration, so the class adds them.
+    'css/typography-classes': ({ dictionary }) => {
+      const rule = (token) => {
+        const { letterSpacing, textCase, textDecoration } = token.original.value;
+        const declarations = [`font: ${token.value};`];
+        if (letterSpacing) declarations.push(`letter-spacing: ${px(letterSpacing)};`);
+        if (TEXT_TRANSFORM[textCase]) declarations.push(`text-transform: ${TEXT_TRANSFORM[textCase]};`);
+        if (textDecoration && textDecoration !== 'none') declarations.push(`text-decoration: ${textDecoration};`);
+        return `.${token.name} {\n${declarations.map((d) => `  ${d}`).join('\n')}\n}`;
+      };
+
+      return `/**\n * Do not edit directly, this file was auto-generated.\n */\n\n${dictionary.allTokens.map(rule).join('\n\n')}\n`;
+    },
+
+    // Android letter spacing is a unitless float (em), which the built-in
+    // `android/resources` format would write as an invalid <dimen>.
+    'android/letter-spacing': ({ dictionary }) => `<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly, this file was auto-generated.
+  Letter spacing in em (relative to the font size), for android:letterSpacing.
+-->
+<resources>
+${dictionary.allTokens
+  .map((token) => `  <item name="${token.name}" format="float" type="dimen">${token.letterSpacingEm}</item>`)
+  .join('\n')}
+</resources>
+`,
+
     // The built-in `ios/plist` format expects colors as [r, g, b] arrays,
     // drops alpha and writes decimals as <integer>. This one works from hex.
     'ios/plist-rgba': ({ dictionary }) => {

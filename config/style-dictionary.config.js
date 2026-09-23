@@ -1,14 +1,24 @@
 // style-dictionary.config.js
-import { hooks, COMPOSITE_TYPES, isColor, isSize, isNotGrid } from '../scripts/transform.js';
+import {
+  hooks,
+  COMPOSITE_TYPES,
+  isColor,
+  isSize,
+  isNotGrid,
+  isLetterSpacing,
+  isUseful
+} from '../scripts/transform.js';
 
 const isPrimitive = (token) => !COMPOSITE_TYPES.includes(token.type);
+const isTextStyle = (token) => token.type === 'custom-fontStyle';
+const isUsefulSize = (token) => isSize(token) && isUseful(token);
 
 const config = {
   // Source token files
   source: ['tokens/**/*.json'],
 
   hooks,
-  preprocessors: ['figma/font-size-type'],
+  preprocessors: ['figma/typography'],
 
   // Define platforms for different outputs
   platforms: {
@@ -27,7 +37,7 @@ const config = {
         {
           destination: 'variables.css',
           format: 'css/variables',
-          filter: isNotGrid,
+          filter: (token) => isNotGrid(token) && isUseful(token),
           options: {
             outputReferences: true
           }
@@ -35,10 +45,15 @@ const config = {
         {
           destination: 'tokens.scss',
           format: 'scss/variables',
-          filter: isNotGrid,
+          filter: (token) => isNotGrid(token) && isUseful(token),
           options: {
             outputReferences: true
           }
+        },
+        {
+          destination: 'typography.css',
+          format: 'css/typography-classes',
+          filter: isTextStyle
         }
       ]
     },
@@ -61,7 +76,7 @@ const config = {
         {
           destination: 'StyleDictionarySize.swift',
           format: 'ios-swift/class.swift',
-          filter: isSize,
+          filter: isUsefulSize,
           options: {
             className: 'StyleDictionarySize',
             import: ['UIKit']
@@ -78,7 +93,7 @@ const config = {
         {
           destination: 'tokens.plist',
           format: 'ios/plist-rgba',
-          filter: isPrimitive
+          filter: (token) => isPrimitive(token) && isUseful(token)
         }
       ]
     },
@@ -118,17 +133,31 @@ const config = {
         {
           destination: 'dimens.xml',
           format: 'android/resources',
-          filter: isSize,
+          filter: (token) => isUsefulSize(token) && !isLetterSpacing(token),
           options: {
             resourceType: 'dimen'
           }
+        },
+        {
+          destination: 'letter_spacing.xml',
+          format: 'android/letter-spacing',
+          filter: isLetterSpacing
         }
       ]
     },
 
     // Android Compose
     'android-compose': {
-      transformGroup: 'compose',
+      // Built-in `compose` group + letter spacing in em
+      transforms: [
+        'attribute/cti',
+        'name/camel',
+        'color/composeColor',
+        'size/compose/em',
+        'size/compose/remToSp',
+        'size/compose/remToDp',
+        'size/compose/letterSpacingEm'
+      ],
       basePxFontSize: 1,
       buildPath: 'build/android-compose/',
       files: [
@@ -144,7 +173,7 @@ const config = {
         {
           destination: 'StyleDictionaryDimensions.kt',
           format: 'compose/object',
-          filter: isSize,
+          filter: isUsefulSize,
           options: {
             className: 'StyleDictionaryDimensions',
             packageName: 'com.example.tokens'

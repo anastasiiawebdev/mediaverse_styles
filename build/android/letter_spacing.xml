@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly, this file was auto-generated.
+  Letter spacing in em (relative to the font size), for android:letterSpacing.
+-->
+<resources>
+  <item name="typography_display_small_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_title_extra_large_prominent_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_title_extra_large_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_title_large_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_title_large_light_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_title_medium_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_title_medium_light_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_title_small_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_title_small_light_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_body_extra_large_letter_spacing" format="float" type="dimen">0.005</item>
+  <item name="typography_body_extra_large_light_letter_spacing" format="float" type="dimen">0.005</item>
+  <item name="typography_body_large_letter_spacing" format="float" type="dimen">0.005</item>
+  <item name="typography_body_large_light_letter_spacing" format="float" type="dimen">0.005</item>
+  <item name="typography_body_medium_letter_spacing" format="float" type="dimen">0.0025</item>
+  <item name="typography_body_small_letter_spacing" format="float" type="dimen">0.004</item>
+  <item name="typography_label_extra_large_letter_spacing" format="float" type="dimen">0.001</item>
+  <item name="typography_label_large_letter_spacing" format="float" type="dimen">0.001</item>
+  <item name="typography_label_large_prominent_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_label_medium_letter_spacing" format="float" type="dimen">0.005</item>
+  <item name="typography_label_small_letter_spacing" format="float" type="dimen">0.005</item>
+  <item name="typography_label_small_prominent_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_label_extra_small_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_label_extra_small_prominent_letter_spacing" format="float" type="dimen">0</item>
+  <item name="typography_label_extra_small_variant_letter_spacing" format="float" type="dimen">0.55</item>
+</resources>
