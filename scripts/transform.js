@@ -22,8 +22,9 @@ const hexToRgba = (hex) => {
 // Web output uses px, matching Figma 1:1. Zero stays unitless.
 const px = (value) => (Number(value) === 0 ? '0' : `${value}px`);
 
-// Mark `typography.*.fontSize` tokens as `fontSize` so Android/Compose emit
-// them in `sp` (scales with the user's font-size setting) instead of `dp`.
+// Mark `typography.*.fontSize` and `lineHeight` tokens as `fontSize` so
+// Android/Compose emit them in `sp` (scales with the user's font-size
+// setting) instead of `dp`, so line height grows together with the text.
 const walk = (node, key, fn) => {
   if (node && typeof node === 'object') {
     if ('value' in node) return fn(node, key);
@@ -35,7 +36,7 @@ export const hooks = {
   preprocessors: {
     'figma/font-size-type': (dictionary) => {
       walk(dictionary.typography, null, (token, key) => {
-        if (key === 'fontSize' && token.type === 'dimension') token.type = 'fontSize';
+        if (['fontSize', 'lineHeight'].includes(key) && token.type === 'dimension') token.type = 'fontSize';
       });
       return dictionary;
     }
