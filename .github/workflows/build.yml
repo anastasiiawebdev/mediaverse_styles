@@ -1,0 +1,25 @@
+name: Build tokens
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Check committed build/ is up to date
+        run: |
+          if [ -n "$(git status --porcelain build)" ]; then
+            echo "::error::build/ is out of date. Run 'npm run build' and commit the result."
+            git status --short build
+            exit 1
+          fi
