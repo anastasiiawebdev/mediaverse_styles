@@ -2,9 +2,9 @@
   "name": "mediaverse_styles",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "build": "style-dictionary build --config config/style-dictionary.config.js"
+    "build": "npm run clean && style-dictionary build --config config/style-dictionary.config.js",
+    "clean": "rm -rf build"
   },
   "keywords": [],
   "author": "Anastasiia Myronenko",

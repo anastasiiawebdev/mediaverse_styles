@@ -1,21 +1,34 @@
-
 // style-dictionary.config.js
-import StyleDictionary from 'style-dictionary';
+import { hooks, COMPOSITE_TYPES, isColor, isSize, isNotGrid } from '../scripts/transform.js';
+
+const isPrimitive = (token) => !COMPOSITE_TYPES.includes(token.type);
 
 const config = {
   // Source token files
   source: ['tokens/**/*.json'],
-  
+
+  hooks,
+  preprocessors: ['figma/font-size-type'],
+
   // Define platforms for different outputs
   platforms: {
-    // CSS Variables
+    // CSS Variables (sizes are converted from Figma px to rem)
     css: {
-      transformGroup: 'css',
+      transforms: [
+        'attribute/cti',
+        'name/kebab',
+        'size/pxToRem',
+        'color/css',
+        'gradient/css',
+        'fontStyle/css/shorthand'
+      ],
+      basePxFontSize: 16,
       buildPath: 'build/css/',
       files: [
         {
           destination: 'variables.css',
           format: 'css/variables',
+          filter: isNotGrid,
           options: {
             outputReferences: true
           }
@@ -23,6 +36,7 @@ const config = {
         {
           destination: 'tokens.scss',
           format: 'scss/variables',
+          filter: isNotGrid,
           options: {
             outputReferences: true
           }
@@ -30,93 +44,84 @@ const config = {
       ]
     },
 
-    // iOS (Swift)
+    // iOS (Swift, UIKit)
     ios: {
-      transformGroup: 'ios',
+      transformGroup: 'ios-swift',
+      basePxFontSize: 1,
       buildPath: 'build/ios/',
       files: [
         {
           destination: 'StyleDictionaryColor.swift',
           format: 'ios-swift/class.swift',
-          className: 'StyleDictionaryColor',
-          filter: {
-            type: 'color'
+          filter: isColor,
+          options: {
+            className: 'StyleDictionaryColor',
+            import: ['UIKit']
           }
         },
         {
           destination: 'StyleDictionarySize.swift',
           format: 'ios-swift/class.swift',
-          className: 'StyleDictionarySize',
-          filter: {
-            type: 'dimension'
+          filter: isSize,
+          options: {
+            className: 'StyleDictionarySize',
+            import: ['UIKit']
           }
-        },
-        {
-          destination: 'StyleDictionaryFont.swift',
-          format: 'ios-swift/class.swift',
-          className: 'StyleDictionaryFont',
-          filter: {
-            type: 'typography'
-          }
-        },
+        }
+      ]
+    },
+
+    // iOS plist (UIKit / legacy codebases)
+    'ios-plist': {
+      transforms: ['attribute/cti', 'name/pascal'],
+      buildPath: 'build/ios/',
+      files: [
         {
           destination: 'tokens.plist',
-          format: 'ios/plist'
+          format: 'ios/plist-rgba',
+          filter: isPrimitive
         }
       ]
     },
 
     // iOS SwiftUI
     'ios-swiftui': {
-      transformGroup: 'ios-swift-separate',
+      transforms: ['attribute/cti', 'name/camel', 'color/ColorSwiftUI', 'size/swift/remToCGFloat'],
+      basePxFontSize: 1,
       buildPath: 'build/ios-swiftui/',
       files: [
         {
           destination: 'StyleDictionaryColor.swift',
           format: 'ios-swift/enum.swift',
-          className: 'StyleDictionaryColor',
-          filter: {
-            type: 'color'
+          filter: isColor,
+          options: {
+            className: 'StyleDictionaryColor',
+            import: ['SwiftUI']
           }
         }
       ]
     },
 
-    // Android (Kotlin/Java)
+    // Android XML resources
     android: {
       transformGroup: 'android',
+      basePxFontSize: 1,
       buildPath: 'build/android/',
       files: [
         {
           destination: 'colors.xml',
           format: 'android/resources',
-          resourceType: 'color',
-          filter: {
-            type: 'color'
+          filter: isColor,
+          options: {
+            resourceType: 'color'
           }
         },
         {
           destination: 'dimens.xml',
           format: 'android/resources',
-          resourceType: 'dimen',
-          filter: {
-            type: 'dimension'
-          }
-        },
-        {
-          destination: 'strings.xml',
-          format: 'android/resources',
-          resourceType: 'string',
-          filter: {
-            type: 'content'
-          }
-        },
-        {
-          destination: 'font_dimens.xml',
-          format: 'android/resources',
-          resourceType: 'dimen',
-          filter: {
-            type: 'fontSizes'
+          filter: isSize,
+          options: {
+            resourceType: 'dimen'
           }
         }
       ]
@@ -125,32 +130,33 @@ const config = {
     // Android Compose
     'android-compose': {
       transformGroup: 'compose',
+      basePxFontSize: 1,
       buildPath: 'build/android-compose/',
       files: [
         {
           destination: 'StyleDictionaryColor.kt',
           format: 'compose/object',
-          className: 'StyleDictionaryColor',
-          packageName: 'com.example.tokens',
-          filter: {
-            type: 'color'
+          filter: isColor,
+          options: {
+            className: 'StyleDictionaryColor',
+            packageName: 'com.example.tokens'
           }
         },
         {
           destination: 'StyleDictionaryDimensions.kt',
           format: 'compose/object',
-          className: 'StyleDictionaryDimensions',
-          packageName: 'com.example.tokens',
-          filter: {
-            type: 'dimension'
+          filter: isSize,
+          options: {
+            className: 'StyleDictionaryDimensions',
+            packageName: 'com.example.tokens'
           }
         }
       ]
     },
 
-    // JSON for documentation or other tools
+    // JSON for documentation or other tools (raw Figma values, sizes in px)
     json: {
-      transformGroup: 'js',
+      transforms: ['attribute/cti', 'name/pascal'],
       buildPath: 'build/json/',
       files: [
         {
@@ -162,112 +168,6 @@ const config = {
           format: 'json/flat'
         }
       ]
-    }
-  },
-
-  // Custom transforms
-  transform: {
-    // Custom color transform for hex to UIColor
-    'color/UIColorSwift': {
-      type: 'value',
-      matcher: function(token) {
-        return token.type === 'color';
-      },
-      transformer: function(token) {
-        const hex = token.value.replace('#', '');
-        const r = parseInt(hex.substr(0, 2), 16) / 255;
-        const g = parseInt(hex.substr(2, 2), 16) / 255;
-        const b = parseInt(hex.substr(4, 2), 16) / 255;
-        const a = hex.length === 8 ? parseInt(hex.substr(6, 2), 16) / 255 : 1;
-        
-        return `UIColor(red: ${r.toFixed(3)}, green: ${g.toFixed(3)}, blue: ${b.toFixed(3)}, alpha: ${a.toFixed(3)})`;
-      }
-    },
-
-    // Custom dimension transform for iOS
-    'size/remToPoints': {
-      type: 'value',
-      matcher: function(token) {
-        return token.type === 'dimension' && token.value.includes('rem');
-      },
-      transformer: function(token) {
-        const remValue = parseFloat(token.value);
-        return Math.round(remValue * 16) + '.0'; // Convert rem to points
-      }
-    }
-  },
-
-  // Custom formats
-  format: {
-    // Custom iOS Swift format
-    'ios/constants.swift': {
-      name: 'ios/constants.swift',
-      formatter: function({dictionary, options}) {
-        const { className = 'StyleDictionary' } = options;
-        
-        return `import UIKit
-
-public class ${className} {
-${dictionary.allTokens.map(token => 
-  `    public static let ${token.name} = ${token.value}`
-).join('\n')}
-}`;
-      }
-    },
-
-    // Custom Android Kotlin object format
-    'android/compose.kt': {
-      name: 'android/compose.kt',
-      formatter: function({dictionary, options}) {
-        const { className = 'Tokens', packageName = 'com.example' } = options;
-        
-        return `package ${packageName}
-
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-
-object ${className} {
-${dictionary.allTokens.map(token => {
-  let value = token.value;
-  if (token.type === 'color') {
-    value = `Color(0xFF${token.value.replace('#', '')})`;
-  } else if (token.type === 'dimension') {
-    value = `${parseFloat(token.value)}.${'dp'}`;
-  }
-  return `    val ${token.name} = ${value}`;
-}).join('\n')}
-}`;
-      }
-    }
-  },
-
-  // Custom transform groups
-  transformGroup: {
-    'ios-swift-separate': [
-      'attribute/cti',
-      'name/cti/camel',
-      'color/hex8ios',
-      'size/remToPoints'
-    ],
-    'compose': [
-      'attribute/cti', 
-      'name/cti/camel',
-      'color/hex8android',
-      'size/remToDp'
-    ]
-  },
-
-  // Custom filters
-  filter: {
-    'colors-only': function(token) {
-      return token.type === 'color';
-    },
-    'dimensions-only': function(token) {
-      return token.type === 'dimension';
-    },
-    'typography-only': function(token) {
-      return token.type === 'typography' || token.type === 'fontSizes' || token.type === 'fontWeights';
     }
   },
 

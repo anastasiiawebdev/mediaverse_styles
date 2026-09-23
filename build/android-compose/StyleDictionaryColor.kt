@@ -4,12 +4,12 @@
 
 
 
-package 
+package com.example.tokens
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.*
 
-object {
+object StyleDictionaryColor {
   val colorDarkError = Color(0xffb3261e)
   val colorDarkOnMedia = Color(0xffffffff)
   val colorDarkOnSurfaceDark = Color(0xff5d5d5d)
