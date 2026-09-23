@@ -25,7 +25,18 @@
       <key>a</key>
       <real>1</real>
     </dict>
-    <key>ColorDarkSurfaceDark</key>
+    <key>ColorDarkErrorOnDark</key>
+    <dict>
+      <key>r</key>
+      <real>0.949</real>
+      <key>g</key>
+      <real>0.5451</real>
+      <key>b</key>
+      <real>0.5098</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+    <key>ColorDarkSurfaceBase</key>
     <dict>
       <key>r</key>
       <real>0.0941</real>
@@ -36,7 +47,7 @@
       <key>a</key>
       <real>1</real>
     </dict>
-    <key>ColorDarkSurfaceLight</key>
+    <key>ColorDarkSurfaceRaised</key>
     <dict>
       <key>r</key>
       <real>0.2078</real>
@@ -47,7 +58,7 @@
       <key>a</key>
       <real>1</real>
     </dict>
-    <key>ColorDarkSurfaceMediumEnabled</key>
+    <key>ColorDarkSurfaceOverlay</key>
     <dict>
       <key>r</key>
       <real>0.1333</real>
@@ -58,7 +69,7 @@
       <key>a</key>
       <real>1</real>
     </dict>
-    <key>ColorDarkSurfaceMediumDisabled</key>
+    <key>ColorDarkSurfaceOverlayDisabled</key>
     <dict>
       <key>r</key>
       <real>0.0549</real>
@@ -69,29 +80,7 @@
       <key>a</key>
       <real>1</real>
     </dict>
-    <key>ColorDarkOnSurfaceDark</key>
-    <dict>
-      <key>r</key>
-      <real>0.3647</real>
-      <key>g</key>
-      <real>0.3647</real>
-      <key>b</key>
-      <real>0.3647</real>
-      <key>a</key>
-      <real>1</real>
-    </dict>
-    <key>ColorDarkOnSurfaceMedium</key>
-    <dict>
-      <key>r</key>
-      <real>0.5451</real>
-      <key>g</key>
-      <real>0.5451</real>
-      <key>b</key>
-      <real>0.5451</real>
-      <key>a</key>
-      <real>1</real>
-    </dict>
-    <key>ColorDarkOnSurfaceLightEnabled</key>
+    <key>ColorDarkTextPrimary</key>
     <dict>
       <key>r</key>
       <real>0.8941</real>
@@ -102,7 +91,40 @@
       <key>a</key>
       <real>1</real>
     </dict>
-    <key>ColorDarkOnSurfaceLightDisabled</key>
+    <key>ColorDarkTextSecondary</key>
+    <dict>
+      <key>r</key>
+      <real>0.5451</real>
+      <key>g</key>
+      <real>0.5451</real>
+      <key>b</key>
+      <real>0.5451</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+    <key>ColorDarkTextSecondaryOnDark</key>
+    <dict>
+      <key>r</key>
+      <real>0.6392</real>
+      <key>g</key>
+      <real>0.6392</real>
+      <key>b</key>
+      <real>0.6392</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+    <key>ColorDarkTextTertiary</key>
+    <dict>
+      <key>r</key>
+      <real>0.3647</real>
+      <key>g</key>
+      <real>0.3647</real>
+      <key>b</key>
+      <real>0.3647</real>
+      <key>a</key>
+      <real>1</real>
+    </dict>
+    <key>ColorDarkTextDisabled</key>
     <dict>
       <key>r</key>
       <real>0.3569</real>
@@ -113,7 +135,7 @@
       <key>a</key>
       <real>1</real>
     </dict>
-    <key>ColorOpacityTextMedium</key>
+    <key>ColorDarkTextOverlayMedium</key>
     <dict>
       <key>r</key>
       <real>1</real>
@@ -124,7 +146,7 @@
       <key>a</key>
       <real>0.502</real>
     </dict>
-    <key>ColorOpacityTextLight</key>
+    <key>ColorDarkTextOverlayLight</key>
     <dict>
       <key>r</key>
       <real>1</real>
@@ -135,7 +157,7 @@
       <key>a</key>
       <real>0.302</real>
     </dict>
-    <key>ColorOpacityOnMediaMedium</key>
+    <key>ColorDarkMediaOverlayMedium</key>
     <dict>
       <key>r</key>
       <real>0.0941</real>
@@ -146,7 +168,7 @@
       <key>a</key>
       <real>0.6</real>
     </dict>
-    <key>ColorOpacityOnMediaLight</key>
+    <key>ColorDarkMediaOverlayLight</key>
     <dict>
       <key>r</key>
       <real>0.0941</real>

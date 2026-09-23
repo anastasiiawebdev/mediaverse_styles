@@ -6,16 +6,18 @@
 <resources>
   <color name="color_dark_on_media">#ffffffff</color>
   <color name="color_dark_error">#ffb3261e</color>
-  <color name="color_dark_surface_dark">#ff181818</color>
-  <color name="color_dark_surface_light">#ff353535</color>
-  <color name="color_dark_surface_medium_enabled">#ff222222</color>
-  <color name="color_dark_surface_medium_disabled">#ff0e0e0e</color>
-  <color name="color_dark_on_surface_dark">#ff5d5d5d</color>
-  <color name="color_dark_on_surface_medium">#ff8b8b8b</color>
-  <color name="color_dark_on_surface_light_enabled">#ffe4e4e4</color>
-  <color name="color_dark_on_surface_light_disabled">#ff5b5b5b</color>
-  <color name="color_opacity_text_medium">#80ffffff</color>
-  <color name="color_opacity_text_light">#4dffffff</color>
-  <color name="color_opacity_on_media_medium">#99181818</color>
-  <color name="color_opacity_on_media_light">#33181818</color>
+  <color name="color_dark_error_on_dark">#fff28b82</color>
+  <color name="color_dark_surface_base">#ff181818</color>
+  <color name="color_dark_surface_raised">#ff353535</color>
+  <color name="color_dark_surface_overlay">#ff222222</color>
+  <color name="color_dark_surface_overlay_disabled">#ff0e0e0e</color>
+  <color name="color_dark_text_primary">#ffe4e4e4</color>
+  <color name="color_dark_text_secondary">#ff8b8b8b</color>
+  <color name="color_dark_text_secondary_on_dark">#ffa3a3a3</color>
+  <color name="color_dark_text_tertiary">#ff5d5d5d</color>
+  <color name="color_dark_text_disabled">#ff5b5b5b</color>
+  <color name="color_dark_text_overlay_medium">#80ffffff</color>
+  <color name="color_dark_text_overlay_light">#4dffffff</color>
+  <color name="color_dark_media_overlay_medium">#99181818</color>
+  <color name="color_dark_media_overlay_light">#33181818</color>
 </resources>
