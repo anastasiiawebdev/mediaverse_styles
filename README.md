@@ -48,7 +48,7 @@ This setup exports design tokens for a wide range of platforms, including:
 - Source tokens live in `tokens/figma-tokens.json`, exported from Figma with the
   [Design Tokens](https://github.com/lukasoppermann/design-tokens) plugin
 - Figma values are unitless **px**; they are converted per platform
-  (`rem` for CSS, `CGFloat` pt for iOS, `dp`/`sp` for Android)
+  (`px` for CSS, `CGFloat` pt for iOS, `dp`/`sp` for Android)
 - Custom hooks (preprocessor, transforms, plist format) live in `scripts/transform.js`
 - Applies **platform-specific naming conventions** to prevent naming collisions and improve readability
 

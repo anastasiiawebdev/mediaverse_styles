@@ -19,7 +19,8 @@ const hexToRgba = (hex) => {
   return { r: channel(0), g: channel(2), b: channel(4), a: h.length === 8 ? channel(6) : 1 };
 };
 
-const pxToRem = (px) => (px === 0 ? '0' : `${px / 16}rem`);
+// Web output uses px, matching Figma 1:1. Zero stays unitless.
+const px = (value) => (Number(value) === 0 ? '0' : `${value}px`);
 
 // Mark `typography.*.fontSize` tokens as `fontSize` so Android/Compose emit
 // them in `sp` (scales with the user's font-size setting) instead of `dp`.
@@ -41,6 +42,13 @@ export const hooks = {
   },
 
   transforms: {
+    // Figma px number -> CSS px: 36 -> 36px, 0 -> 0
+    'size/px-web': {
+      type: 'value',
+      filter: isSize,
+      transform: (token) => px(token.value)
+    },
+
     // { gradientType, rotation, stops } -> linear-gradient(...)
     'gradient/css': {
       type: 'value',
@@ -60,7 +68,7 @@ export const hooks = {
       filter: (token) => token.type === 'custom-fontStyle',
       transform: (token) => {
         const { fontStyle, fontWeight, fontSize, lineHeight, fontFamily } = token.value;
-        return `${fontStyle} ${fontWeight} ${pxToRem(fontSize)}/${pxToRem(lineHeight)} '${fontFamily}', sans-serif`;
+        return `${fontStyle} ${fontWeight} ${px(fontSize)}/${px(lineHeight)} '${fontFamily}', sans-serif`;
       }
     }
   },

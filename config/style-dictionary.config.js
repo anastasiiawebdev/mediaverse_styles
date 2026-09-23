@@ -12,17 +12,16 @@ const config = {
 
   // Define platforms for different outputs
   platforms: {
-    // CSS Variables (sizes are converted from Figma px to rem)
+    // CSS Variables (sizes in px, same as Figma)
     css: {
       transforms: [
         'attribute/cti',
         'name/kebab',
-        'size/pxToRem',
+        'size/px-web',
         'color/css',
         'gradient/css',
         'fontStyle/css/shorthand'
       ],
-      basePxFontSize: 16,
       buildPath: 'build/css/',
       files: [
         {
