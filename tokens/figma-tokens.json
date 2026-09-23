@@ -205,101 +205,99 @@
   },
   "gradient": {
     "dark": {
-      "gradient": {
-        "top medium": {
-          "description": "",
-          "type": "custom-gradient",
-          "value": {
-            "gradientType": "linear",
-            "rotation": 180,
-            "stops": [
-              {
-                "position": 0,
-                "color": "#181818ff"
-              },
-              {
-                "position": 1,
-                "color": "#18181833"
-              }
-            ]
-          },
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:efce0c09f418ad9ac69e611238de9ba87a76a7c4,",
-              "exportKey": "gradient"
+      "top medium": {
+        "description": "",
+        "type": "custom-gradient",
+        "value": {
+          "gradientType": "linear",
+          "rotation": 180,
+          "stops": [
+            {
+              "position": 0,
+              "color": "#181818ff"
+            },
+            {
+              "position": 1,
+              "color": "#18181833"
             }
-          }
+          ]
         },
-        "top light": {
-          "description": "",
-          "type": "custom-gradient",
-          "value": {
-            "gradientType": "linear",
-            "rotation": 180,
-            "stops": [
-              {
-                "position": 0,
-                "color": "#181818cc"
-              },
-              {
-                "position": 1,
-                "color": "#18181833"
-              }
-            ]
-          },
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:c59d350b404bce5cf6bf5b0a420778d4bd3466ee,",
-              "exportKey": "gradient"
-            }
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:efce0c09f418ad9ac69e611238de9ba87a76a7c4,",
+            "exportKey": "gradient"
           }
-        },
-        "bottom medium": {
-          "description": "",
-          "type": "custom-gradient",
-          "value": {
-            "gradientType": "linear",
-            "rotation": 180,
-            "stops": [
-              {
-                "position": 0,
-                "color": "#18181800"
-              },
-              {
-                "position": 1,
-                "color": "#181818ff"
-              }
-            ]
-          },
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:5f1259820dd797569dda22062547c503cb319777,",
-              "exportKey": "gradient"
+        }
+      },
+      "top light": {
+        "description": "",
+        "type": "custom-gradient",
+        "value": {
+          "gradientType": "linear",
+          "rotation": 180,
+          "stops": [
+            {
+              "position": 0,
+              "color": "#181818cc"
+            },
+            {
+              "position": 1,
+              "color": "#18181833"
             }
+          ]
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:c59d350b404bce5cf6bf5b0a420778d4bd3466ee,",
+            "exportKey": "gradient"
           }
-        },
-        "bottom light": {
-          "description": "",
-          "type": "custom-gradient",
-          "value": {
-            "gradientType": "linear",
-            "rotation": 180,
-            "stops": [
-              {
-                "position": 0,
-                "color": "#18181800"
-              },
-              {
-                "position": 1,
-                "color": "#181818cc"
-              }
-            ]
-          },
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:2d9e582c24eee8e57b213cb79334ebcd2bfde626,",
-              "exportKey": "gradient"
+        }
+      },
+      "bottom medium": {
+        "description": "",
+        "type": "custom-gradient",
+        "value": {
+          "gradientType": "linear",
+          "rotation": 180,
+          "stops": [
+            {
+              "position": 0,
+              "color": "#18181800"
+            },
+            {
+              "position": 1,
+              "color": "#181818ff"
             }
+          ]
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:5f1259820dd797569dda22062547c503cb319777,",
+            "exportKey": "gradient"
+          }
+        }
+      },
+      "bottom light": {
+        "description": "",
+        "type": "custom-gradient",
+        "value": {
+          "gradientType": "linear",
+          "rotation": 180,
+          "stops": [
+            {
+              "position": 0,
+              "color": "#18181800"
+            },
+            {
+              "position": 1,
+              "color": "#181818cc"
+            }
+          ]
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:2d9e582c24eee8e57b213cb79334ebcd2bfde626,",
+            "exportKey": "gradient"
           }
         }
       }
