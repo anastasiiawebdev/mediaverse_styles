@@ -6,21 +6,23 @@
 // Do not edit directly, this file was auto-generated.
 
 
-import SwiftUI
+import UIKit
 
-public class {
-    public static let ColorDarkError = [UIColor colorWithRed:0.702f green:0.149f blue:0.118f alpha:1.000f]
-    public static let ColorDarkOnMedia = [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:1.000f]
-    public static let ColorDarkOnSurfaceDark = [UIColor colorWithRed:0.365f green:0.365f blue:0.365f alpha:1.000f]
-    public static let ColorDarkOnSurfaceLightDisabled = [UIColor colorWithRed:0.357f green:0.357f blue:0.357f alpha:1.000f]
-    public static let ColorDarkOnSurfaceLightEnabled = [UIColor colorWithRed:0.894f green:0.894f blue:0.894f alpha:1.000f]
-    public static let ColorDarkOnSurfaceMedium = [UIColor colorWithRed:0.545f green:0.545f blue:0.545f alpha:1.000f]
-    public static let ColorDarkSurfaceDark = [UIColor colorWithRed:0.094f green:0.094f blue:0.094f alpha:1.000f]
-    public static let ColorDarkSurfaceLight = [UIColor colorWithRed:0.208f green:0.208f blue:0.208f alpha:1.000f]
-    public static let ColorDarkSurfaceMediumDisabled = [UIColor colorWithRed:0.055f green:0.055f blue:0.055f alpha:1.000f]
-    public static let ColorDarkSurfaceMediumEnabled = [UIColor colorWithRed:0.133f green:0.133f blue:0.133f alpha:1.000f]
-    public static let ColorOpacityOnMediaLight = [UIColor colorWithRed:0.094f green:0.094f blue:0.094f alpha:0.200f]
-    public static let ColorOpacityOnMediaMedium = [UIColor colorWithRed:0.094f green:0.094f blue:0.094f alpha:0.600f]
-    public static let ColorOpacityTextLight = [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:0.302f]
-    public static let ColorOpacityTextMedium = [UIColor colorWithRed:1.000f green:1.000f blue:1.000f alpha:0.502f]
+public class StyleDictionaryColor {
+    public static let colorDarkError = UIColor(red: 0.702, green: 0.149, blue: 0.118, alpha: 1)
+    public static let colorDarkErrorOnDark = UIColor(red: 0.949, green: 0.545, blue: 0.510, alpha: 1)
+    public static let colorDarkMediaOverlayLight = UIColor(red: 0.094, green: 0.094, blue: 0.094, alpha: 0.2)
+    public static let colorDarkMediaOverlayMedium = UIColor(red: 0.094, green: 0.094, blue: 0.094, alpha: 0.6)
+    public static let colorDarkOnMedia = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
+    public static let colorDarkSurfaceBase = UIColor(red: 0.094, green: 0.094, blue: 0.094, alpha: 1)
+    public static let colorDarkSurfaceOverlay = UIColor(red: 0.133, green: 0.133, blue: 0.133, alpha: 1)
+    public static let colorDarkSurfaceOverlayDisabled = UIColor(red: 0.055, green: 0.055, blue: 0.055, alpha: 1)
+    public static let colorDarkSurfaceRaised = UIColor(red: 0.208, green: 0.208, blue: 0.208, alpha: 1)
+    public static let colorDarkTextDisabled = UIColor(red: 0.357, green: 0.357, blue: 0.357, alpha: 1)
+    public static let colorDarkTextOverlayLight = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 0.30196078431372547)
+    public static let colorDarkTextOverlayMedium = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 0.5019607843137255)
+    public static let colorDarkTextPrimary = UIColor(red: 0.894, green: 0.894, blue: 0.894, alpha: 1)
+    public static let colorDarkTextSecondary = UIColor(red: 0.545, green: 0.545, blue: 0.545, alpha: 1)
+    public static let colorDarkTextSecondaryOnDark = UIColor(red: 0.639, green: 0.639, blue: 0.639, alpha: 1)
+    public static let colorDarkTextTertiary = UIColor(red: 0.365, green: 0.365, blue: 0.365, alpha: 1)
 }
